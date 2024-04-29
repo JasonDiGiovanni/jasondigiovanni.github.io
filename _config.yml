@@ -1,7 +1,7 @@
 # Site settings
 title: "Jason Di Giovanni"
-email:
-description: "Jason Di Giovanni Showcase
+email: "jdigiovanni0727+github@gmail.com"
+description: "Jason Di Giovanni Showcase"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
