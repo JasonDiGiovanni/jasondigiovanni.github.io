@@ -12,9 +12,9 @@
                 <script>
                 function handleClick() {
                   // Check if the current URL is the homepage
-                  if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+                  if (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.lcoation.pathname === '/#') {
                     // If on the homepage, scroll to the top
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    window.location.href = "#page-top"; 
                   } else {
                     // If on a different page, redirect to the homepage
                     window.location.href = '/';
