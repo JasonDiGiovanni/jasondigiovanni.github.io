@@ -8,13 +8,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top" onclick="handleClick()">Jason Di Giovanni</a>
+            <a class="navbar-brand page-scroll" href="#" onclick="handleClick()">Jason Di Giovanni</a>
                 <script>
                 function handleClick() {
                   // Check if the current URL is the homepage
                   if (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.locoation.pathname === '/#') {
                     // If on the homepage, scroll to the top
-                    window.location.href = "#page-top"; 
+                    window.scrollTo({ top: 0, behavior: 'smooth', block: 'start' });
                   } else {
                     // If on a different page, redirect to the homepage
                     window.location.href = '/';
