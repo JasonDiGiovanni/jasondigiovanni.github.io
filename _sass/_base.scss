@@ -43,11 +43,11 @@ p {
 }
 
 .bg-primary {
-    background-color: $theme-primary;
+    background-color: #323639;
 }
 
 .bg-dark {
-    background-color: $theme-dark;
+    background-color: #323639;
     color: white;
 }
 
@@ -100,9 +100,9 @@ aside {
                 > a,
                 > a:focus {
                     color: $theme-primary !important;
-                    background-color: transparent;
+                    background-color: #323639;
                     &:hover {
-                        background-color: transparent;
+                        background-color: #323639;
                     }
                 }
             }
