@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    /* CSS styles */
+    .section {
+      padding: 40px 20px;
+      overflow: hidden; /* Clear float */
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .image {
+      flex: 1;
+      margin: 0 20px;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      /* Adjust layout for smaller screens */
+      .content-wrapper {
+        flex-direction: column;
+      }
+
+      .image {
+        margin: 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <h2 class="section-title">Section 1</h2>
+    <div class="content-wrapper">
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec justo sit amet nisi vestibulum fringilla. Sed id ligula id urna pretium fringilla.</p>
+      </div>
+      <div class="image">
+        <img src="img/portfolio/IntegratedFitnessScreenshot.jpg" alt="Image 1">
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Section 2</h2>
+    <div class="content-wrapper">
+      <div class="image">
+        <img src="img/portfolio/FireBot.jpg" alt="Image 2">
+      </div>
+      <div class="content">
+        <p>Curabitur hendrerit, magna sed tincidunt volutpat, leo tellus volutpat diam, eget maximus purus ante eget nulla. Ut varius urna vel arcu lacinia, in ultrices neque malesuada.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more sections as needed -->
+
+</body>
+</html>
