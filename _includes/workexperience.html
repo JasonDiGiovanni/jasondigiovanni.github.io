@@ -1,3 +1,30 @@
+<style>
+  /* Layout only for Work Experience section */
+  #workexperience .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;               /* space between image and text */
+  }
+  #workexperience .image { 
+    flex: 0 0 40%;           /* image takes 40% */
+    max-width: 40%;
+  }
+  #workexperience .content { 
+    flex: 0 0 60%;           /* text takes 60% */
+    max-width: 60%;
+  }
+  #workexperience .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  /* Flip sides when you add .right-image */
+  #workexperience .content-wrapper.right-image {
+    flex-direction: row-reverse;
+  }
+</style>
+
 <section id="workexperience" style="background-color: #323639; color: #fff;">
     <div class="container">
         <div class="row">
