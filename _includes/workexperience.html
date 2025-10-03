@@ -1,39 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
-  <style>
-    body { background:#323639; margin:0; font-family: Arial, sans-serif; }
-    .section { padding:40px 20px; }
-    .section-title { font-size:24px; margin-bottom:20px; color:#fff; text-align:center; }
-
-    .content-wrapper {
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      color:#fff;
-      gap:24px;
-    }
-    /* Default = image left, text right */
-    .image, .content { flex:1; }
-    .image img { max-width:100%; height:auto; display:block; }
-
-    /* Use this class when you want image on the RIGHT, text on the LEFT */
-    .right-image { flex-direction: row-reverse; }
-
-    @media (max-width: 768px) {
-      .content-wrapper, .right-image { flex-direction:column; }
-    }
-  </style>
-</head>
-<body>
-
-   <div class="container">
+<section id="workexperience" style="background-color: #323639; color: #fff;">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-title">Work Experience</h2>
+                <h2 class="section-header">Work Experience</h2>
                 <hr class="primary">
             </div>
         </div>
@@ -41,7 +10,7 @@
 
     <!-- Image RIGHT / Text LEFT (add right-image) -->
   <div class="section">
-    <h2 class="section-title">Sentinel Technologies</h2>
+    <h2 class="section-header">Sentinel Technologies</h2>
     <div class="content-wrapper right-image">
       <div class="image">
         <img src="img/SentinelLogo.png" alt="Sentinel Technologies Logo">
@@ -54,7 +23,7 @@
 
   <!-- Image LEFT / Text RIGHT -->
   <div class="section">
-    <h2 class="section-title">Principal Financial Group</h2>
+    <h2 class="section-header">Principal Financial Group</h2>
     <div class="content-wrapper">
       <div class="image">
         <img src="img/PrincipalLogo.png" alt="Principal Financial Group Logo">
@@ -64,8 +33,4 @@
       </div>
     </div>
   </div>
-
-
-
-</body>
-</html>
+</section>
