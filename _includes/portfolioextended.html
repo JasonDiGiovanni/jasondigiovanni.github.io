@@ -6,11 +6,6 @@
   <title>Portfolio</title>
   <style>
     /* CSS styles */
-    body {
-      background-color: #323639;
-      font-family: Arial, sans-serif;
-    }
-
     .section {
       padding: 40px 20px;
       overflow: hidden; /* Clear float */
@@ -19,35 +14,85 @@
     .section-title {
       font-size: 24px;
       margin-bottom: 20px;
-      color: white;
-      text-align: center;
+      color:white;
+      text-align:center;
     }
 
     .content-wrapper {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
-      color: white;
+      align-items: flex-start;
+      color:white;
     }
 
     .content {
       flex: 1;
-      padding: 0 20px;
     }
 
     .image {
       flex: 1;
-      padding: 0 20px;
+      margin: 0 20px;
+      float: left; /* Float the image to the left */
     }
 
     .image img {
       max-width: 100%;
       height: auto;
-      display: block;
     }
 
-    /* Alternate layout: even sections reverse order */
-    .section:nth-child(even) .content-wrapper {
-      flex-direction: row-reverse;
+    @media (max-width: 768px) {
+      /* Adjust layout for smaller screens */
+      .content-wrapper {
+        flex-direction: column;
+      }
+
+      .image {
+        margin: 20px 0;
+        float: none; /* Remove float for smaller screens */
+      }
     }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <h2 class="section-title" style="text-align:center;">Integrated Fitness</h2>
+    <div class="content-wrapper">
+      <div class="image">
+        <img src="img/portfolio/IntegratedFitnessScreenshot.jpg" alt="Integrated Fitness App">
+      </div>
+      <div class="content">
+        <p>Integrated Fitness was a group project for Computer Science 309 (Software Development Practices). I worked on backend development, and I managed our remote server. Throughout the semester, I gained experience with 
+        Git, IntelliJ, and Maven.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title" style="text-align:center;">Firefighter Bot</h2>
+    <div class="content-wrapper">
+      <div class="image">
+        <img src="img/portfolio/FireBot.jpg" alt="Firefighter Roomba">
+      </div>
+      <div class="content">
+        <p>Curabitur hendrerit, magna sed tincidunt volutpat, leo tellus volutpat diam, eget maximus purus ante eget nulla. Ut varius urna vel arcu lacinia, in ultrices neque malesuada.</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="section">
+    <h2 class="section-title" style="text-align:center;">Virtual Pinball</h2>
+    <div class="content-wrapper">
+      <div class="image">
+        <img src="img/portfolio/PinballMachineScreenshot.jpg" alt="Virtual Pinball 3D Model">
+      </div>
+      <div class="content">
+        <p>Curabitur hendrerit, magna sed tincidunt volutpat, leo tellus volutpat diam, eget maximus purus ante eget nulla. Ut varius urna vel arcu lacinia, in ultrices neque malesuada.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more sections as needed -->
+
+</body>
+</html>
