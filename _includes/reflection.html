@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Papers</title>
+  <style>
+    body { background:#323639; color:#fff; margin:0; font-family: Arial, sans-serif; padding-top:10pt; }
 
+    /* Section container + centered width */
+    .section { padding:40px 20px; }
+    .container { max-width:1100px; margin:0 auto; }
+    .section-header { text-align:center; margin:0 0 16px; }
+
+    /* Side-by-side layout (text + button) */
+    .content-wrapper {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+    }
+    .content { flex:0 0 60%; max-width:60%; }
+    .button-box { flex:0 0 40%; max-width:40%; display:flex; justify-content:center; }
+
+    /* Flip sides on alternating rows */
+    .content-wrapper.right-image { flex-direction: row-reverse; }
+
+    /* Button styling (no text-size changes) */
+    .btn {
+      display:inline-block;
+      padding:12px 20px;
+      border:2px solid #fff;
+      color:#fff;
+      text-decoration:none;
+      border-radius:8px;
+      transition:background .2s ease, color .2s ease;
+    }
+    .btn:hover { background:#fff; color:#323639; }
+
+    /* Stack on small screens */
+    @media (max-width: 768px) {
+      .content-wrapper,
+      .content-wrapper.right-image { flex-direction:column; }
+      .content, .button-box { flex:0 0 auto; max-width:100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1 -->
+  <div class="section">
+    <div class="container">
+      <h2 class="section-header">General Education Reflection</h2>
+      <div class="content-wrapper">
+        <div class="content">
+          <p>
+            Personal narrative linking historic worms (Morris, Silentbob), internships, and coursework to a growing
+            definition of cybersecurity—thinking like both user and attacker to build safer systems.
+          </p>
+        </div>
+        <div class="button-box">
+          <a class="btn" href="reflections/genedreflection.pdf">Open Paper Page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 (flipped) -->
+  <div class="section">
+    <div class="container">
+      <h2 class="section-header">Cumulative Reflection</h2>
+      <div class="content-wrapper right-image">
+        <div class="content">
+          <p>
+            Discusses how ethics vs. morals shape security decisions with examples like vulnerability disclosure
+            and social-engineering tests, highlighting context, harm, and professional duty.
+          </p>
+        </div>
+        <div class="button-box">
+          <a class="btn" href="reflections/cumulativereflection.pdf">Open Paper Page</a>
+        </div>
+      </div>
+    </div>
+  </div>
